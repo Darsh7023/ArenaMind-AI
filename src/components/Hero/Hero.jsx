@@ -3,7 +3,7 @@ import { FaArrowRight, FaPlayCircle } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-slate-950 text-white flex items-center justify-center px-6">
+    <section className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white flex items-center justify-center px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
         {/* Left Side */}
