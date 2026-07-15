@@ -16,25 +16,37 @@ function Navbar() {
 
         {/* Menu */}
         <ul className="hidden md:flex gap-8 text-gray-300 font-medium">
-          <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            Home
+
+          <li>
+            <Link to="/" className="hover:text-cyan-400">
+              Home
+            </Link>
           </li>
 
-          <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            AI Assistant
+          <li>
+            <Link to="/chat" className="hover:text-cyan-400">
+              AI Assistant
+            </Link>
           </li>
 
-          <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            Navigation
+          <li>
+            <Link to="/navigation" className="hover:text-cyan-400">
+              Navigation
+            </Link>
           </li>
 
-          <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            Dashboard
+          <li>
+            <Link to="/dashboard" className="hover:text-cyan-400">
+              Dashboard
+            </Link>
           </li>
 
-          <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            Contact
+          <li>
+            <Link to="/contact" className="hover:text-cyan-400">
+              Contact
+            </Link>
           </li>
+
         </ul>
 
         {/* Button */}
