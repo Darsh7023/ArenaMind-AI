@@ -1,8 +1,8 @@
-
 import { useState } from "react";
 
 function ChatBot() {
   const [message, setMessage] = useState("");
+
   const [messages, setMessages] = useState([
     {
       sender: "AI",
@@ -19,40 +19,47 @@ function ChatBot() {
     };
 
     let aiReply =
-  "🤖 I can help you with FIFA World Cup 2026 stadium services, matches, navigation and fan support.";
+      "🤖 I can help you with FIFA World Cup 2026 stadium services, matches, navigation and fan support.";
 
-const msg = message.toLowerCase();
+    const msg = message.toLowerCase();
 
-if (msg.includes("match") || msg.includes("schedule")) {
-  aiReply = "⚽ FIFA World Cup 2026 match schedules and live updates are available through ArenaMind AI.";
-} 
-else if (msg.includes("stadium") || msg.includes("seat")) {
-  aiReply = "🏟️ I can guide you to stadium sections, seating areas and visitor facilities.";
-} 
-else if (msg.includes("parking") || msg.includes("car")) {
-  aiReply = "🚗 Parking zones are available near Gate B. Follow digital signs for smart parking guidance.";
-} 
-else if (msg.includes("food") || msg.includes("restaurant")) {
-  aiReply = "🍔 Food courts are available on Level 1 with multiple food and beverage options.";
-} 
-else if (msg.includes("exit") || msg.includes("emergency")) {
-  aiReply = "🚨 Emergency exits are marked clearly. Follow the nearest exit signs and security instructions.";
-} 
-else if (msg.includes("weather")) {
-  aiReply = "🌦️ Current stadium weather monitoring shows comfortable conditions for fans.";
-} 
-else if (msg.includes("ticket")) {
-  aiReply = "🎟️ Ticket assistance: Keep your digital ticket ready and scan it at the entry gate.";
-} 
-else if (msg.includes("medical") || msg.includes("hospital")) {
-  aiReply = "🏥 Medical centers are available 24×7 inside the stadium for emergency support.";
-} 
-else if (msg.includes("crowd")) {
-  aiReply = "👥 AI Crowd Monitoring shows less crowded routes to improve your stadium experience.";
-}
-else if (msg.includes("language")) {
-  aiReply = "🌐 ArenaMind AI supports multilingual fan assistance.";
-}
+    if (msg.includes("match") || msg.includes("schedule")) {
+      aiReply =
+        "⚽ FIFA World Cup 2026 match schedules and live updates are available through ArenaMind AI.";
+    } 
+    else if (msg.includes("stadium") || msg.includes("seat")) {
+      aiReply =
+        "🏟️ I can help you find stadium information, seating areas and facilities.";
+    } 
+    else if (msg.includes("parking")) {
+      aiReply =
+        "🚗 Parking areas are available near all stadium gates.";
+    } 
+    else if (msg.includes("food")) {
+      aiReply =
+        "🍔 Food courts are available inside the stadium.";
+    } 
+    else if (msg.includes("exit") || msg.includes("emergency")) {
+      aiReply =
+        "🚨 Emergency exits are marked clearly. Follow security instructions for help.";
+    } 
+    else if (msg.includes("weather")) {
+      aiReply =
+        "🌦️ Stadium weather monitoring shows comfortable conditions for fans.";
+    } 
+    else if (msg.includes("ticket")) {
+      aiReply =
+        "🎟️ Keep your digital ticket ready for entry gate scanning.";
+    } 
+    else if (msg.includes("medical")) {
+      aiReply =
+        "🏥 Medical centers are available 24×7 inside the stadium.";
+    } 
+    else if (msg.includes("crowd")) {
+      aiReply =
+        "👥 AI Crowd Monitoring suggests less crowded routes for visitors.";
+    }
+
     setMessages([
       ...messages,
       userMessage,
@@ -67,6 +74,7 @@ else if (msg.includes("language")) {
 
   return (
     <div className="bg-slate-800 rounded-xl p-6 shadow-lg w-full max-w-2xl">
+
       <div className="h-80 overflow-y-auto bg-slate-700 rounded-lg p-4 mb-4">
         {messages.map((msg, index) => (
           <div key={index} className="mb-3">
@@ -90,6 +98,7 @@ else if (msg.includes("language")) {
       >
         Send
       </button>
+
     </div>
   );
 }
