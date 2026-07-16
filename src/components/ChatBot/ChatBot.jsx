@@ -19,22 +19,40 @@ function ChatBot() {
     };
 
     let aiReply =
-      "I'm here to help you with FIFA World Cup 2026 information.";
+  "🤖 I can help you with FIFA World Cup 2026 stadium services, matches, navigation and fan support.";
 
-    const msg = message.toLowerCase();
+const msg = message.toLowerCase();
 
-    if (msg.includes("match")) {
-      aiReply = "⚽ Match schedules will be displayed here.";
-    } else if (msg.includes("stadium")) {
-      aiReply = "🏟️ I can help you find stadium information and seating.";
-    } else if (msg.includes("parking")) {
-      aiReply = "🚗 Parking areas are available near all stadium gates.";
-    } else if (msg.includes("food")) {
-      aiReply = "🍔 Food courts are available inside the stadium.";
-    } else if (msg.includes("exit")) {
-      aiReply = "🚪 Follow the nearest emergency exit signs.";
-    }
-
+if (msg.includes("match") || msg.includes("schedule")) {
+  aiReply = "⚽ FIFA World Cup 2026 match schedules and live updates are available through ArenaMind AI.";
+} 
+else if (msg.includes("stadium") || msg.includes("seat")) {
+  aiReply = "🏟️ I can guide you to stadium sections, seating areas and visitor facilities.";
+} 
+else if (msg.includes("parking") || msg.includes("car")) {
+  aiReply = "🚗 Parking zones are available near Gate B. Follow digital signs for smart parking guidance.";
+} 
+else if (msg.includes("food") || msg.includes("restaurant")) {
+  aiReply = "🍔 Food courts are available on Level 1 with multiple food and beverage options.";
+} 
+else if (msg.includes("exit") || msg.includes("emergency")) {
+  aiReply = "🚨 Emergency exits are marked clearly. Follow the nearest exit signs and security instructions.";
+} 
+else if (msg.includes("weather")) {
+  aiReply = "🌦️ Current stadium weather monitoring shows comfortable conditions for fans.";
+} 
+else if (msg.includes("ticket")) {
+  aiReply = "🎟️ Ticket assistance: Keep your digital ticket ready and scan it at the entry gate.";
+} 
+else if (msg.includes("medical") || msg.includes("hospital")) {
+  aiReply = "🏥 Medical centers are available 24×7 inside the stadium for emergency support.";
+} 
+else if (msg.includes("crowd")) {
+  aiReply = "👥 AI Crowd Monitoring shows less crowded routes to improve your stadium experience.";
+}
+else if (msg.includes("language")) {
+  aiReply = "🌐 ArenaMind AI supports multilingual fan assistance.";
+}
     setMessages([
       ...messages,
       userMessage,
