@@ -17,25 +17,7 @@ function Chat() {
           match schedules, crowd updates and fan services.
         </p>
 
-        <div className="w-full max-w-2xl bg-slate-800 rounded-xl p-6 shadow-lg">
-
-          <div className="bg-slate-700 rounded-lg p-4 mb-4">
-            <p>
-              👋 Hello! I'm ArenaMind AI. How can I help you today?
-            </p>
-          </div>
-
-          <input
-            type="text"
-            placeholder="Ask your question..."
-            className="w-full p-3 rounded-lg bg-slate-700 outline-none"
-          />
-
-          <button className="mt-4 w-full bg-cyan-500 hover:bg-cyan-600 py-3 rounded-lg font-semibold">
-            Send
-          </button>
-
-        </div>
+        <ChatBot />
 
       </div>
     </>
