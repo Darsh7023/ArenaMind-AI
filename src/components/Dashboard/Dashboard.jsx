@@ -1,35 +1,41 @@
+import { FaUsers, FaCar, FaGlobe, FaLeaf } from "react-icons/fa";
+
 function Dashboard() {
   return (
-    <section className="py-20 bg-slate-950 text-white">
+    <section className="py-20 bg-gradient-to-b from-slate-950 to-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">
-          Live Stadium Dashboard
+          ⚡ Live Stadium Dashboard
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-          <div className="bg-slate-800 p-6 rounded-xl text-center">
-            <h3 className="text-3xl">👥</h3>
-            <p className="text-2xl font-bold mt-2">12,540</p>
-            <p>Live Crowd</p>
+          {/* Crowd */}
+          <div className="bg-slate-800 p-6 rounded-xl text-center shadow-lg hover:scale-105 transition">
+            <FaUsers className="text-4xl mx-auto text-cyan-400" />
+            <p className="text-3xl font-bold mt-3">12,540</p>
+            <p className="text-gray-400">Live Crowd</p>
           </div>
 
-          <div className="bg-slate-800 p-6 rounded-xl text-center">
-            <h3 className="text-3xl">🚗</h3>
-            <p className="text-2xl font-bold mt-2">82%</p>
-            <p>Parking Full</p>
+          {/* Parking */}
+          <div className="bg-slate-800 p-6 rounded-xl text-center shadow-lg hover:scale-105 transition">
+            <FaCar className="text-4xl mx-auto text-yellow-400" />
+            <p className="text-3xl font-bold mt-3">82%</p>
+            <p className="text-gray-400">Parking Full</p>
           </div>
 
-          <div className="bg-slate-800 p-6 rounded-xl text-center">
-            <h3 className="text-3xl">🌍</h3>
-            <p className="text-2xl font-bold mt-2">18</p>
-            <p>Languages</p>
+          {/* Languages */}
+          <div className="bg-slate-800 p-6 rounded-xl text-center shadow-lg hover:scale-105 transition">
+            <FaGlobe className="text-4xl mx-auto text-green-400" />
+            <p className="text-3xl font-bold mt-3">18</p>
+            <p className="text-gray-400">Languages Supported</p>
           </div>
 
-          <div className="bg-slate-800 p-6 rounded-xl text-center">
-            <h3 className="text-3xl">♻️</h3>
-            <p className="text-2xl font-bold mt-2">2.4 Tons</p>
-            <p>Carbon Saved</p>
+          {/* Carbon Saved */}
+          <div className="bg-slate-800 p-6 rounded-xl text-center shadow-lg hover:scale-105 transition">
+            <FaLeaf className="text-4xl mx-auto text-lime-400" />
+            <p className="text-3xl font-bold mt-3">2.4 Tons</p>
+            <p className="text-gray-400">Carbon Saved</p>
           </div>
 
         </div>
