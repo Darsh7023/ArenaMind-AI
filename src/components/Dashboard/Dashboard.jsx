@@ -1,4 +1,4 @@
-import { FaUsers, FaCar, FaGlobe, FaLeaf } from "react-icons/fa";
+import { FaUsers, FaCar, FaGlobe, FaLeaf, FaShieldAlt, FaCloudSun } from "react-icons/fa";
 
 function Dashboard() {
   return (
