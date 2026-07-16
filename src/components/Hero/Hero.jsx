@@ -25,10 +25,13 @@ function Hero() {
 
           <div className="mt-8 flex gap-4">
 
-            <button className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold transition">
-              Get Started
-              <FaArrowRight />
-            </button>
+            <Link
+  to="/chat"
+  className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold transition"
+>
+  Get Started
+  <FaArrowRight />
+</Link>
 
             <button className="flex items-center gap-2 border border-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-500 hover:text-black transition">
               <FaPlayCircle />
