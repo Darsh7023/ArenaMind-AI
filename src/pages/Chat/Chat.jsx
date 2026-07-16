@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
+import ChatBot from "../../components/ChatBot/ChatBot";
 
 function Chat() {
   return (

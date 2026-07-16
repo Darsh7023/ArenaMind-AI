@@ -1,3 +1,4 @@
+import ChatBot from "../../components/ChatBot/ChatBot";
 import { useState } from "react";
 
 function ChatBot() {
