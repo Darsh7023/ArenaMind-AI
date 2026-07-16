@@ -1,5 +1,6 @@
 import heroImage from "../../assets/hero.png";
 import { FaArrowRight, FaPlayCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
