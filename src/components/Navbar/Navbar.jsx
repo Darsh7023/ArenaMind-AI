@@ -50,10 +50,12 @@ function Navbar() {
         </ul>
 
         {/* Button */}
-        <button className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl font-semibold transition duration-300 shadow-lg">
-          Get Started
-        </button>
-
+        <Link
+  to="/chat"
+  className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl font-semibold transition duration-300 shadow-lg"
+>
+  Get Started
+</Link>
       </div>
     </nav>
   );
