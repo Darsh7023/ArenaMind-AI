@@ -33,10 +33,15 @@ function Hero() {
   <FaArrowRight />
 </Link>
 
-            <button className="flex items-center gap-2 border border-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-500 hover:text-black transition">
-              <FaPlayCircle />
-              Watch Demo
-            </button>
+            <a
+  href="https://www.youtube.com/results?search_query=fifa+world+cup+2026+stadium"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 border border-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-500 hover:text-black transition"
+>
+  <FaPlayCircle />
+  Watch Demo
+</a>
 
           </div>
         </div>
