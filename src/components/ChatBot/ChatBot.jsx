@@ -87,7 +87,7 @@ ${userMessage.text}
         },
       ]);
 
-      console.log(error);
+      console.error("Gemini Error:", error);
 
     } finally {
       setLoading(false);
