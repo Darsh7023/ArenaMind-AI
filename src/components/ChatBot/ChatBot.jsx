@@ -1,4 +1,4 @@
-import ChatBot from "../../components/ChatBot/ChatBot";
+
 import { useState } from "react";
 
 function ChatBot() {
@@ -77,3 +77,4 @@ function ChatBot() {
 }
 
 export default ChatBot;
+
