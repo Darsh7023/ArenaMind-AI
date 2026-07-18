@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { GoogleGenAI } from "@google/genai";
 
 function ChatBot() {
   const [message, setMessage] = useState("");
