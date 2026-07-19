@@ -46,7 +46,7 @@ console.log("API KEY:", import.meta.env.VITE_GEMINI_API_KEY);
 
       const response = await ai.models.generateContent({
 
-        model:"gemini-2.5-flash",
+        model:"gemini-2.0-flash",
 
         contents:[
 
