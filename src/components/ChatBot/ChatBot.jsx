@@ -100,8 +100,10 @@ ${userMessage}
 
     } catch(error){
 
+  console.log("GEMINI ERROR:", error);
 
-      console.log(error);
+  alert(error.message);
+
 
 
       // fallback response
